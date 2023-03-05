@@ -166,7 +166,7 @@ nav a:hover {
   justify-content: space-between;
 }
 .home .container .text h1 {
-  font-size: 64px;
+  font-size: 50px;
   font-family: "Spline Sans Mono";
 }
 .home .container .text p {
@@ -183,7 +183,6 @@ nav a:hover {
 
 .ml11 {
   font-weight: 700;
-  font-size: 3.5em;
 }
 
 .ml11 .text-wrapper {
@@ -394,6 +393,20 @@ nav a:hover {
 }
 .template .contain a {
   text-decoration: none;
+  position: relative;
+}
+.template .contain .bestselling::before {
+  content: "Best Selling";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  text-align: center;
+  background-color: #f80f0f;
+  padding: 15px 1px;
+  border-radius: 100%;
+  color: white;
+  font-weight: 800;
+  width: 100px;
 }
 .template .contain .box {
   transition: 0.3s;
@@ -636,17 +649,14 @@ nav a:hover {
 .unu,
 .doi,
 .trei {
-  -webkit-animation: mouse-scroll 1s infinite;
   animation: mouse-scroll 1s infinite;
 }
 
 .unu {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
-  -webkit-animation-direction: alternate;
   animation-direction: alternate;
-  -webkit-animation-delay: alternate;
-          animation-delay: alternate;
+  animation-delay: alternate;
 }
 
 .doi {
@@ -690,19 +700,7 @@ nav a:hover {
 }
 
 .wheel {
-  -webkit-animation: l-wheel 0.6s linear infinite;
   animation: mouse-wheel 0.6s linear infinite;
-}
-
-@-webkit-keyframes mouse-wheel {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(6px);
-  }
 }
 @keyframes mouse-wheel {
   0% {
@@ -719,17 +717,6 @@ nav a:hover {
   }
   100% {
     top: 1px;
-  }
-}
-@-webkit-keyframes mouse-scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes mouse-scroll {
