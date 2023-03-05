@@ -197,7 +197,7 @@ nav a:hover {
 
         .text {
             h1 {
-                font-size: 64px;
+                font-size: 50px;
                 font-family: $main-font;
             }
 
@@ -222,7 +222,8 @@ nav a:hover {
 
 .ml11 {
     font-weight: 700;
-    font-size: 3.5em;
+    // font-size: 3em;
+    // padding-right: 5px;
 }
 
 .ml11 .text-wrapper {
@@ -468,6 +469,19 @@ nav a:hover {
 
         a {
             text-decoration: none;
+            position: relative;
+        }.bestselling::before{
+            content: "Best Selling";
+            position : absolute;
+            right: 0;
+            top: -50px;
+            text-align: center;
+            background-color: #f80f0f;
+            padding: 15px 1px;
+            border-radius: 100%;
+            color: white;
+            font-weight: 800;
+            width: 100px;
         }
 
         .box {
