@@ -212,7 +212,8 @@ nav a:hover {
                 margin-top: 20px;
                 font-size: 20px;
                 // font-weight: lighter;
-                width: 400px;
+                width: 500px;
+                // width: fit-content;
                 line-height: 30px;
                 color: rgb(42, 42, 42);
             }
@@ -282,6 +283,7 @@ nav a:hover {
     .home .container .text p {
         font-size: 18px;
         padding-left: 10px;
+        width: fit-content;
     }
 
     .home .container .image img {
@@ -322,7 +324,7 @@ nav a:hover {
 
 // main title
 .main-title {
-    font-family: $main-font;
+    font-family: $twomain-font;
 }
 
 .main-title template {
@@ -673,6 +675,13 @@ nav a:hover {
 @media (max-width: 920px) {
     .contact .container {
         flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .contact h4{
+        width: fit-content;
+        margin-bottom: 30px;
+        font-size: 16px;
     }
 }
 
