@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Mitr&family=Public+Sans:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 $white : white;
 $black: black;
 $gray : gray;
 $main-font : 'Spline Sans Mono';
+// $twomain-font : 'Lato', sans-serif;
+$twomain-font : 'Poppins', sans-serif;
+// $twomain-font :  'Carter One', cursive;
+
 $text-font: 'Poppins',
 sans-serif;
 
@@ -197,8 +203,9 @@ nav a:hover {
 
         .text {
             h1 {
-                font-size: 50px;
-                font-family: $main-font;
+                font-size: 70px;
+                font-family: $twomain-font;
+                font-weight: bolder;
             }
 
             p {
@@ -210,11 +217,18 @@ nav a:hover {
                 color: rgb(42, 42, 42);
             }
         }
-
+        button{border: none; margin-top: 50px;} a{
+            background-color: $black;
+            color: $white;
+            text-decoration: none;
+            list-style: none;
+            border-radius: 2px;
+            padding: 15px 15px;
+        }
         .image {
             svg {
                 max-width: 100%;
-                margin: 10px;
+                margin: 40px 10px 0px 10px;
             }
         }
     }
@@ -470,15 +484,18 @@ nav a:hover {
         a {
             text-decoration: none;
             position: relative;
-        }.bestselling::before{
+        }
+
+        .bestselling::before {
             content: "Best Selling";
-            position : absolute;
-            right: 0;
-            top: -50px;
+            position: absolute;
+            font-size: 15px;
+            right: 10px;
+            top: -5px;
             text-align: center;
-            background-color: #f80f0f;
-            padding: 15px 1px;
-            border-radius: 100%;
+            background-color: #000000;
+            padding: 15px 10px;
+            border-radius: 10px;
             color: white;
             font-weight: 800;
             width: 100px;
@@ -486,15 +503,15 @@ nav a:hover {
 
         .box {
             transition: .3s;
-            background-color: rgb(248, 248, 248);
-            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
             padding: 30px 20px;
 
             .images img {
                 max-width: 100%;
-                width: 350px;
+                width: 300px;
                 margin-bottom: 50px;
-                border-radius: 15px;
+                border-radius: 5px;
             }
 
             .text h1 {
@@ -510,7 +527,7 @@ nav a:hover {
             }
 
             .text p {
-                font-size: 16px;
+                font-size: 14px;
                 // line-height: 40px;
                 margin-top: 10px;
                 margin-bottom: 10px;
@@ -527,7 +544,9 @@ nav a:hover {
     .template .container {
         row-gap: 20px;
     }
-
+    .template .images img {
+        width: 250px;
+    }
     .template .list ul li {
         font-size: 18px;
         padding: 0.2rem 0.5rem;
@@ -551,7 +570,7 @@ nav a:hover {
     list-style: none;
     margin-top: 5px;
     margin-bottom: 5rem;
-    margin-left: 50px;
+    margin-right: 50px;
 }
 
 @media (max-width:768px) {
@@ -565,7 +584,7 @@ nav a:hover {
         li {
             background-color: #fafafa;
             border-radius: 10px;
-            padding: 15px 32px 15px 10px;
+            padding: 15px 32px 15px 15px;
             margin: 5px;
             color: #616161;
             font-size: 20px;
@@ -582,11 +601,18 @@ nav a:hover {
     .main-title p {
         color: $white;
         text-align: center;
+        padding-bottom: 0;
     }
-
+    h4{
+        color: rgb(219, 219, 219);
+        width: 500px;
+        line-height: 40px;
+    }span{
+        color: #682cd6;
+    }
     .container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 
         .image img {
@@ -661,6 +687,7 @@ nav a:hover {
             color: $black;
             font-weight: bold;
             font-size: 28px;
+            margin-top:14px ;
         }
 
         svg {
