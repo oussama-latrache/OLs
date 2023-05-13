@@ -178,7 +178,7 @@ nav a:hover {
 .home .container .text p {
   margin-top: 20px;
   font-size: 20px;
-  width: 400px;
+  width: 500px;
   line-height: 30px;
   color: rgb(42, 42, 42);
 }
@@ -243,6 +243,8 @@ nav a:hover {
   .home .container .text p {
     font-size: 18px;
     padding-left: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .home .container .image img {
     max-width: 90%;
@@ -274,7 +276,7 @@ nav a:hover {
   }
 }
 .main-title {
-  font-family: "Spline Sans Mono";
+  font-family: "Poppins", sans-serif;
 }
 
 .main-title template {
@@ -574,6 +576,14 @@ nav a:hover {
 @media (max-width: 920px) {
   .contact .container {
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .contact h4 {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 30px;
+    font-size: 16px;
   }
 }
 .footer .logo {
