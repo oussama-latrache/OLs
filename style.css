@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Mitr&family=Public+Sans:wght@200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -166,8 +171,9 @@ nav a:hover {
   justify-content: space-between;
 }
 .home .container .text h1 {
-  font-size: 50px;
-  font-family: "Spline Sans Mono";
+  font-size: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
 }
 .home .container .text p {
   margin-top: 20px;
@@ -176,9 +182,21 @@ nav a:hover {
   line-height: 30px;
   color: rgb(42, 42, 42);
 }
+.home .container button {
+  border: none;
+  margin-top: 50px;
+}
+.home .container a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  border-radius: 2px;
+  padding: 15px 15px;
+}
 .home .container .image svg {
   max-width: 100%;
-  margin: 10px;
+  margin: 40px 10px 0px 10px;
 }
 
 .ml11 {
@@ -398,27 +416,28 @@ nav a:hover {
 .template .contain .bestselling::before {
   content: "Best Selling";
   position: absolute;
-  right: 0;
-  top: -50px;
+  font-size: 15px;
+  right: 10px;
+  top: -5px;
   text-align: center;
-  background-color: #f80f0f;
-  padding: 15px 1px;
-  border-radius: 100%;
+  background-color: #000000;
+  padding: 15px 10px;
+  border-radius: 10px;
   color: white;
   font-weight: 800;
   width: 100px;
 }
 .template .contain .box {
   transition: 0.3s;
-  background-color: rgb(248, 248, 248);
-  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
   padding: 30px 20px;
 }
 .template .contain .box .images img {
   max-width: 100%;
-  width: 350px;
+  width: 300px;
   margin-bottom: 50px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .template .contain .box .text h1 {
   font-size: 16px;
@@ -431,7 +450,7 @@ nav a:hover {
   color: black;
 }
 .template .contain .box .text p {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
@@ -441,6 +460,9 @@ nav a:hover {
 @media (max-width: 768px) {
   .template .container {
     row-gap: 20px;
+  }
+  .template .images img {
+    width: 250px;
   }
   .template .list ul li {
     font-size: 18px;
@@ -462,7 +484,7 @@ nav a:hover {
   list-style: none;
   margin-top: 5px;
   margin-bottom: 5rem;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 @media (max-width: 768px) {
@@ -475,7 +497,7 @@ nav a:hover {
   .template .list ul li {
     background-color: #fafafa;
     border-radius: 10px;
-    padding: 15px 32px 15px 10px;
+    padding: 15px 32px 15px 15px;
     margin: 5px;
     color: #616161;
     font-size: 20px;
@@ -488,10 +510,19 @@ nav a:hover {
 .contact .main-title p {
   color: white;
   text-align: center;
+  padding-bottom: 0;
+}
+.contact h4 {
+  color: rgb(219, 219, 219);
+  width: 500px;
+  line-height: 40px;
+}
+.contact span {
+  color: #682cd6;
 }
 .contact .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .contact .container .image img {
@@ -553,6 +584,7 @@ nav a:hover {
   color: black;
   font-weight: bold;
   font-size: 28px;
+  margin-top: 14px;
 }
 .footer .logo svg {
   margin: 30px 2px 30px 30px;
