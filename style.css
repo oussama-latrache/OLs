@@ -45,7 +45,7 @@
 /* large */
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 body {
@@ -428,6 +428,36 @@ nav a:hover {
   color: white;
   font-weight: 800;
   width: 100px;
+}
+.template .contain .update::before {
+  content: "Sill in update";
+  position: absolute;
+  font-size: 15px;
+  right: 10px;
+  top: -5px;
+  text-align: center;
+  background-color: #a03be4;
+  color: #000000;
+  padding: 15px 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+  width: 100px;
+}
+.template .contain .new::before {
+  content: "New Template";
+  position: absolute;
+  font-size: 15px;
+  right: 10px;
+  top: -5px;
+  text-align: center;
+  background-color: #ee3847;
+  color: #000000;
+  padding: 15px 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+  width: 110px;
 }
 .template .contain .box {
   transition: 0.3s;
