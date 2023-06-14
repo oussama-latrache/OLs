@@ -11,7 +11,8 @@ $black: black;
 $gray : gray;
 $main-font : 'Spline Sans Mono';
 // $twomain-font : 'Lato', sans-serif;
-$twomain-font : 'Poppins', sans-serif;
+$twomain-font : 'Poppins',
+sans-serif;
 // $twomain-font :  'Carter One', cursive;
 
 $text-font: 'Poppins',
@@ -60,7 +61,7 @@ sans-serif;
 /* large */
 @media (min-width:1200px) {
     .container {
-        width: 1170px;
+        width: 1200px;
     }
 }
 
@@ -218,7 +219,13 @@ nav a:hover {
                 color: rgb(42, 42, 42);
             }
         }
-        button{border: none; margin-top: 50px;} a{
+
+        button {
+            border: none;
+            margin-top: 50px;
+        }
+
+        a {
             background-color: $black;
             color: $white;
             text-decoration: none;
@@ -226,6 +233,7 @@ nav a:hover {
             border-radius: 2px;
             padding: 15px 15px;
         }
+
         .image {
             svg {
                 max-width: 100%;
@@ -495,12 +503,45 @@ nav a:hover {
             right: 10px;
             top: -5px;
             text-align: center;
-            background-color: #000000;
+            background-color: #f55175;
             padding: 15px 10px;
             border-radius: 10px;
             color: white;
             font-weight: 800;
             width: 100px;
+        }
+
+        .update::before {
+            content: "Sill in update";
+            position: absolute;
+            font-size: 15px;
+            right: 10px;
+            top: -5px;
+            text-align: center;
+            background-color: #a03be4;
+            color: #000000;
+            padding: 15px 10px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 800;
+            width: 100px;
+        }
+
+        .new::before {
+            content: "New Template";
+            position: absolute;
+            font-size: 15px;
+            right: 10px;
+            // letter-spacing: 5;
+            top: -5px;
+            text-align: center;
+            background-color: #388dee;
+            color: #000000;
+            padding: 15px 10px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 800;
+            width: 110px;
         }
 
         .box {
@@ -546,9 +587,11 @@ nav a:hover {
     .template .container {
         row-gap: 20px;
     }
+
     .template .images img {
         width: 250px;
     }
+
     .template .list ul li {
         font-size: 18px;
         padding: 0.2rem 0.5rem;
@@ -605,13 +648,17 @@ nav a:hover {
         text-align: center;
         padding-bottom: 0;
     }
-    h4{
+
+    h4 {
         color: rgb(219, 219, 219);
         width: 500px;
         line-height: 40px;
-    }span{
+    }
+
+    span {
         color: #682cd6;
     }
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -677,8 +724,9 @@ nav a:hover {
         flex-direction: column;
     }
 }
+
 @media (max-width: 768px) {
-    .contact h4{
+    .contact h4 {
         width: fit-content;
         margin-bottom: 30px;
         font-size: 16px;
@@ -696,7 +744,7 @@ nav a:hover {
             color: $black;
             font-weight: bold;
             font-size: 28px;
-            margin-top:14px ;
+            margin-top: 14px;
         }
 
         svg {
