@@ -773,17 +773,18 @@
     <!-- cursor -->
     <!-- <div class="cursor"></div>
     <div class="cursor2"></div> -->
-    <script>
-window.embeddedChatbotConfig = {
-chatbotId: "Mezxo_79_F60jS_U8lGka",
-domain: "www.chatbase.co"
-}
-</script>
-<script
-src="https://www.chatbase.co/embed.min.js"
-chatbotId="Mezxo_79_F60jS_U8lGka"
-domain="www.chatbase.co"
-defer>
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '651d2d567db1bb00087f10b7' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
 </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
